@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700;900&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  margin: 0;
+  font-family: "Livvic", sans-serif;
+  background-color: #014E56;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#main-header {
+  padding-top: 73px;
+}
+
+.main_header__container,
+.main_header__logo_block,
+.main_header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_header__nav {
+  margin-left: 80px;
+}
+
+.main_header__item:not(:first-child) {
+  margin-left: 40px;
+}
+
+.main_header__link {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.main_header__btn {
+  padding: 11px 33px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  border-radius: 24px;
+  border: 2px solid #FFF;
+}
+
+.main_header__menu {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-image: url("../img/burger.svg");
+  display: none;
+}
+
+.main_header__logo {
+  max-width: 159px;
+}
+
+@media screen and (max-width: 768px) {
+  .main_header__logo {
+    max-width: 128px;
+  }
+  .main_header__nav {
+    margin-left: 48px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .main_header__btn,
+  .main_header__nav {
+    display: none;
+  }
+  .main_header__menu {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */
