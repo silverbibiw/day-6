@@ -477,4 +477,130 @@ span {
   .get_container {
     gap: 84px;
   }
+}
+.footer {
+  background-color: #002529;
+  padding: 48px 0;
+}
+
+.footer_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+
+.footer_link {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.footer_text {
+  max-width: 171px;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.footer_block--last {
+  text-align: end;
+  margin-left: auto;
+}
+
+.footer_text2 {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+.footer_block--second {
+  margin-left: 125px;
+}
+
+.social_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 51px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  gap: 16px;
+}
+
+.footer_block--tablet {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .footer_block--tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 35px;
+  }
+  .footer_block--last {
+    display: none;
+  }
+  .social_list {
+    margin-bottom: 0;
+  }
+  .footer_container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (max-width: 578px) {
+  .footer_block--tablet {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .footer_list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .footer_block--second {
+    margin: 0 auto;
+  }
+  .social_list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 16px;
+  }
+  .footer_text2 {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
